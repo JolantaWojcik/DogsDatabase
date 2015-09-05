@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/category"
+        android:id="@+id/tv_category"
+        android:layout_gravity="center" />
+
+    <RadioGroup
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/category_baza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/baza"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/category_zaginione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zaginione" />
+
+        <RadioButton
+            android:id="@+id/category_adopcja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adopcja" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/name"
+            android:id="@+id/name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dog_name" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/desc"
+            android:id="@+id/desc" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dog_description"
+            android:layout_weight="0.22" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/contact"
+            android:id="@+id/cont" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo"
+        android:onClick="AddImage"
+        android:id="@+id/image_button"
+        android:layout_gravity="center_horizontal"
+        android:background="#f9f3ff" />
+
+    <Button
+        android:onClick="AddDogToDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dodaj_psa"
+        android:id="@+id/dodaj_button"
+        android:layout_gravity="center_horizontal"
+        android:background="#f9f3ff" />
+
+
+</LinearLayout>

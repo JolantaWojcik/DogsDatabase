@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Baza Psów</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="category">Wybierz kategorię do której chcesz dodać psa</string>
+    <string name="baza">Baza psów</string>
+    <string name="zaginione">Zaginione</string>
+    <string name="adopcja">Do adopcji</string>
+    <string name="name">Podaj imię psa</string>
+    <string name="desc">Podaj cechy charakterystyczne psa</string>
+    <string name="contact">Wprowadż swój nr telefonu lub mail</string>
+    <string name="photo">Dodaj zdjęcie z telefonu</string>
+    <string name="dodaj_psa">Dodaj do bazy</string>
+    <string name="id_psa">Wprowadź id psa</string>
+    <string name="category_change">Zmień kategorię do które należy</string>
+    <string name="change">Zmień kategorię</string>
+</resources>
