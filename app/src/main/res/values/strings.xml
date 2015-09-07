@@ -15,4 +15,7 @@
     <string name="id_psa">Wprowadź id psa</string>
     <string name="category_change">Zmień kategorię do które należy</string>
     <string name="change">Zmień kategorię</string>
+    <string name="title_activity_single_item">SingleItem</string>
+    <string name="cechy">Cechy charakterystyczne: </string>
+    <string name="kontakt">Kontakt do właściciela: </string>
 </resources>

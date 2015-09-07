@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView" >
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:weightSum="1"
@@ -8,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/category"
         android:id="@+id/tv_category"
         android:layout_gravity="center" />
@@ -44,12 +48,13 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/name"
             android:id="@+id/name" />
 
@@ -63,47 +68,71 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/desc"
-            android:id="@+id/desc" />
+            android:id="@+id/desc"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:id="@+id/dog_description"
-            android:layout_weight="0.22" />
+            android:layout_margin="10dp" />
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/contact"
-            android:id="@+id/cont" />
+            android:id="@+id/cont"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/contact" />
+            android:id="@+id/contact"
+            android:layout_margin="10dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/photo"
-        android:onClick="AddImage"
-        android:id="@+id/image_button"
-        android:layout_gravity="center_horizontal"
-        android:background="#f9f3ff" />
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/photo"
+            android:onClick="addImage"
+            android:id="@+id/image_button"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_style"
+            android:textAlignment="center"
+            android:layout_marginRight="15dp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@mipmap/logodogs"
+            android:layout_gravity="right" />
+    </LinearLayout>
 
     <Button
-        android:onClick="AddDogToDB"
-        android:layout_width="wrap_content"
+        android:background="@drawable/button_style"
+        android:onClick="addDogToDB"
+        android:layout_width="135dp"
         android:layout_height="wrap_content"
         android:text="@string/dodaj_psa"
         android:id="@+id/dodaj_button"
         android:layout_gravity="center_horizontal"
-        android:background="#f9f3ff" />
+        android:layout_margin="10dp" />
 
 
 </LinearLayout>
+</ScrollView>

@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class PagerAdapter extends FragmentPagerAdapter {
 
-    private String[] tabs = {"Dodaj psa", "Usuń psa", "Lista psów", "Zaginione", "Do adopcji"};
+    private String[] tabs = {"Lista psów", "Dodaj psa", "Usuń psa", "Zaginione", "Do adopcji"};
 
     public PagerAdapter(FragmentManager fm) {
         super(fm);
@@ -20,11 +20,11 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
         switch(index){
             case 0:
-                return new AddDog();
-            case 1:
-                return new RemoveDog();
-            case 2:
                 return new DogsList();
+            case 1:
+                return new AddDog();
+            case 2:
+                return new RemoveDog();
             case 3:
                 return new MissingDogs();
             case 4:
